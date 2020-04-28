@@ -29,7 +29,7 @@ export function parseRequest(req: IncomingMessage) {
     const parsedRequest: ParsedRequest = {
         fileType: extension === 'jpeg' ? extension : 'png',
         text: decodeURIComponent(text),
-        theme: theme == 'black' ? 'black' : (theme == 'white' ? 'white' : (theme =='brand' ? 'brand':'brand_dark')),
+        theme: theme == 'black' ? 'black' : (theme == 'white' ? 'white' : (theme =='brand_dark' ? 'brand_dark':'brand')),
         md: md === '1' || md === 'true',
         fontSize: fontSize || '96px',
         images: getArray(images),
