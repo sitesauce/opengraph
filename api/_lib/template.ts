@@ -44,12 +44,17 @@ function getCss(theme: Theme, fontSize: string) {
     }
 
     code {
-        color: #805ad5;
         font-family: 'JetBrains Mono';
-        white-space: pre-wrap;
-        border-radius: 4px;
-        padding: 1px 4px;
-        letter-spacing: -5px;
+        background-color: ${['white', 'brand'].includes(theme) ? '#d5f5f6' : '#05505c'};
+		line-height: ${sanitizeHtml(fontSize)};
+		display: inline-block;
+		border-radius: 1.25rem;
+		padding-left: 0.25rem;
+		padding-right: 0.25rem;
+		white-space: nowrap;
+		color: ${['white', 'brand'].includes(theme) ? '#047481' :'#d5f5f6'};
+		font-weight: 400;
+		vertical-align: baseline;
     }
 
     .logo-wrapper {
