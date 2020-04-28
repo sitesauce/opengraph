@@ -49,8 +49,8 @@ function getCss(theme: Theme, fontSize: string) {
 		line-height: ${sanitizeHtml(fontSize)};
 		display: inline-block;
 		border-radius: 1.25rem;
-		padding-left: 0.25rem;
-		padding-right: 0.25rem;
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
 		white-space: nowrap;
 		color: ${['white', 'brand'].includes(theme) ? '#047481' :'#d5f5f6'};
 		font-weight: 400;
