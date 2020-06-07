@@ -158,6 +158,10 @@ button:hover {
     width: 100px;
 }
 
+.field-flex .select-wrapper select{
+  width: auto;
+}
+
 .select-arrow {
     border-left: 1px solid #eaeaea;
     background: #fff;
